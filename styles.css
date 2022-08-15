@@ -1,0 +1,126 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #37af65;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 1em;
+}
+
+#title, #description{
+  text-align: center;
+  margin: 0.25em auto;
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#description{
+  font-style: italic;
+  font-weight:lighter;
+  margin-top: -0.5rem;
+}
+
+#survey-form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  background: #1b1b32;
+  padding: 0.1rem 1rem;
+  border-radius: 0.75rem;
+}
+
+legend{
+  padding: 1rem 0 0 0;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 0.25rem solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+#name-label, #sex-label, #number-label, #email-label, #checkbox{
+display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #32321B;
+  border: 1px solid #32321B;
+  color: #ffffff;
+}
+
+#marital-status, #sex, #diploma {
+  width: unset;
+  font-size: 0.5rem;
+}
+
+a{
+  text-decoration-line: none;
+}
+
+#submit {
+display: block;
+width: 30%;
+padding: 1rem 0;
+margin-left: auto;
+margin-right: auto;
+margin-top: -3rem;
+margin-bottom: 1rem;
+border-radius: 3rem;
+border-style: solid;
+border-color: #32321B;
+cursor:pointer;
+}
+
+button:hover{
+background-color: #32321B;
+font-size: 1rem;
+font-weight: bolder;
+}
+
+span{
+color: #37af65;
+font-weight: bolder;
+}
+
+header, main, footer{
+  margin: 4% 0;
+  padding: 1% 0;
+}
+
+header{
+  margin: unset;
+}
+
+footer div{
+  margin: auto;
+  text-align: center;
+  font-size: 75%;
+}
+
+div p, ul{
+  margin: 0.1%;
+  padding: 0.1% 0;
+}
+
+ul{
+  display: inline-block;
+}

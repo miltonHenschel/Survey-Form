@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>Survey Form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
     </head>
     <body>
+        <header>
+            <h1 id="title">Agent Survey Form</h1>
+            <p id="description">This is a survey form for civil servants.</p>
+        </header>
+        <main>
+        <form id="survey-form" action="https://getform.io/f/fdbf5ed3-5d88-4e82-9be0-131be139c63e" method="POST" enctype="multipart/form-data" name="email-form">
 
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label  id="name-label">Matricule: <input type="text" id="matricule" placeholder="Enter your matricule" maxlength="10" name="Matricule" required></label>
+                <label id="name-label">Name:
+                    <input type="text" id="name" placeholder="Enter your name" name="Name" required>
+                </label>
+                <label for="sex" id="sex-label">Sex:<br>
+                    <input type="radio" name="sex" value="Male" id="sex"> Male<br>
+                    <input type="radio" name="sex" value="Female"  id="sex"> Female</label>
+                <label id="name-label">DoB: <input type="date" id="date" name="dateOfBirth"></label>
+                <label id="name-label">PoB: <input type="text" id="name" placeholder="Enter your place of birth" name="placeOfBirth"></label>
+                <label id="number-label">Telephone:<input type="number" id="number" placeholder="Enter your phone number" min="200000000" max="699999999" name="Tel"></label>
+                <label id="email-label">Enter Your Email: <input type="email" placeholder="name@domain.com" id="email" name="Email" required></label>
+                <label for="marital-status">Marital Status:<br>
+                    <input type="radio" id="marital-status" name="Marital-status" value="Single"> Single<br>
+                    <input type="radio" id="marital-status" name="Marital-status" value="Married"> Married<br>
+                    <input type="radio" id="marital-status" name="Marital-status" value="Divorced"> Divorced</label>
+            </fieldset>
+            <fieldset>
+                <legend>Professional Details</legend>
+                <label for="Role" id="checkbox">Role:
+                    <select placeholder="Please only one..." id="dropdown" name="Role">
+                        <option value="Teacher">Teacher</option>
+                        <option value="Discipline Master">Discipline Master</option>
+                        <option value="Senior Discipline Master">Senior Discipline Master</option>
+                        <option value="Vice Principal">Vice Principal</option>
+                        <option value="Principal">Principal</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </label>
+                <label for="Class" id="checkbox">Class:
+                    <select id="dropdown" name="Class">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                    </select>
+                </label>
+                <label for="echelon" id="checkbox">Echelon:
+                    <select name="Echelon" id="dropdown"">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </label>
+                <label for="diploma" id="dropdown">Diploma:<br>
+                    <input type="checkbox" name="Diploma" value="GCE O/L" id="diploma"> GCE O/L<br>
+                    <input type="checkbox" name="Diploma" value="GCE A/L" id="diploma"> GCE A/L<br>
+                    <input type="checkbox" name="Diploma" value="Bachelor's Degree" id="diploma"> Bachelor's Degree<br>
+                    <input type="checkbox" name="Diploma" value="Bachelor's Degree" id="diploma"> Bachelor's Degree<br>
+                    <input type="checkbox" name="Diploma" value="Bachelor's Degree" id="diploma"> Bachelor's Degree<br>
+                    <input type="checkbox" name="Diploma" value="diploma" id="diploma"> DIPET I<br>
+                    <input type="checkbox" name="Diploma" value="DIPET II" id="diploma"> DIPET II<br>
+                    <input type="checkbox" name="Diploma" value="Masters" id="diploma"> Masters<br>
+                    <input type="checkbox" name="Diploma" value="PhD" id="diploma"> PhD<br>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend for="comment" id="name-label">Suggestions <textarea rows="4" cols="45" placeholder="Enter your comment here..." name="Suggestion"></textarea>
+        </fieldset>
+        <button type="submit" id="submit" value="Submit"><span>Submit</span></button>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <p>Copyright 2022 By Henschel NKETCHOGUE M.</p>
+            <p>Learn more about me on
+            <ul>
+                <li><a href="https://www.linkedin.com/in/henschelnketchoguem/" rel="noopener" target="_blank">Linkedin</a></li>
+                <li><a href="https://github.com/miltonHenschel" rel="noopener" target="_blank">Github</a></li>
+            </ul>
+            </p>
+        </div>
+    </footer>
     </body>
 </html>
